@@ -1,0 +1,359 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: PP mori;
+      color: #fff;
+}
+
+html,
+body {
+      height: 100%;
+      width: 100%;
+}
+
+.cursor {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      position: fixed;
+      background-color: #EDBFFF;
+      z-index: 8;
+      transition: background-image ease 0.5s;
+      background-position: center;
+      background-size: cover;
+      mix-blend-mode: difference;
+
+}
+
+.main {
+      background-color: #0F0D0D;
+      cursor: none;
+}
+
+/* <-------------------------------------------page1--------------------------------------------------------->   */
+
+.page1 {
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      z-index: 9;
+}
+
+.page1>h1 {
+      font-size: 10vh;
+      font-weight: 300;
+      font-family: pp mori;
+      margin-top: 15vh;
+      margin-left: 15vh;
+
+}
+
+.page1>h2 {
+      font-size: 10vh;
+      font-weight: 300;
+      font-family: pp mori;
+      margin-left: 40vh;
+
+}
+
+.page1 video {
+      width: 60%;
+      margin-top: 10vw;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+}
+
+.nav {
+      height: 60px;
+      width: 100%;
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+}
+
+
+
+.nav>img {
+      height: 30px;
+}
+
+.nav-part2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* gap is used to maintain space between words */
+      gap: 24px;
+
+}
+
+.nav-part2>h4 {
+      font-size: 16px;
+      font-weight: 500;
+
+      text-transform: uppercase;
+}
+
+/* h4:nth-child(1)    wale se select krte hai   */
+.nav-part2>h4:nth-child(1) {
+      border-bottom: 2px solid #fff;
+}
+
+.nav-part3>.circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+}
+
+/* <-------------------------------------------page2--------------------------------------------------------->   */
+
+.page2 {
+      min-height: 130vh;
+      width: 100%;
+      padding: 100px 5vw;
+      border-bottom: 2px solid #dadada;
+      position: relative;
+      z-index: 9;
+}
+
+.page2 h1 {
+
+      font-size: 7vw;
+      font-weight: 300;
+      font-family: pp mori;
+      color: #111;
+}
+
+.page2-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: red; */
+      height: 60vh;
+      width: 100%;
+      /* padding: 0 5vw; */
+}
+
+.page2-left {
+
+      width: 35%;
+      /* background-color: blue; */
+      margin-left: 1.5vw;
+}
+
+.page2-left h2 {
+
+      font-size: 4vw;
+      font-weight: 300;
+      font-family: pp mori;
+      color: #111;
+
+}
+
+
+.page2-right {
+
+      width: 30%;
+      /* background-color: blue; */
+      margin-right: 1vw;
+}
+
+.page2-right p {
+      font-size: 25px;
+      color: #111;
+}
+
+.page2-right button {
+      width: 100%;
+      border-radius: 50px;
+      border: none;
+      padding: 4px 0;
+      background-color: #EDBFFF;
+      color: #111;
+      margin-top: 20px;
+}
+
+/* <-------------------------------------------page3--------------------------------------------------------->   */
+
+.page3 {
+      min-height: 150vh;
+      width: 100%;
+      padding-top: 100px;
+      position: relative;
+      z-index: 9;
+
+}
+
+.page3 h1 {
+      font-size: 6.8vw;
+      font-weight: 300;
+      color: #111;
+      margin-left: 100px;
+}
+
+.page3-part1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+}
+
+.page3-part1 img {
+      height: 400px;
+      margin-top: 160px;
+}
+
+.page3-part1 video {
+      height: 400px;
+      margin-top: 40px;
+}
+
+
+/* <-------------------------------------------page4--------------------------------------------------------->   */
+.page4 {
+      min-height: 100vh;
+      width: 100%;
+      z-index: 9;
+      position: relative;
+      padding: 170px 100px;
+}
+
+.elem {
+      /* background-color: salmon; */
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+}
+
+.elem img {
+      position: absolute;
+      opacity: 0;
+      transition: all ease-out 0.5s;
+      transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1) {
+      left: 2%;
+}
+
+.elem img:nth-child(3) {
+      right: 5%;
+}
+
+.text-div {
+      height: 16vh;
+      position: relative;
+      z-index: 9;
+      overflow: hidden;
+}
+
+.elem h1 {
+      font-size: 7.5vw;
+      font-weight: 600;
+      transition: all ease-out 0.5s;
+}
+
+.elem:hover h1 {
+      transform: translateY(-100%);
+      color: #EDBFFF;
+}
+
+.elem:hover img {
+      opacity: 1;
+      transform: translateY(0%) rotate(0deg);
+
+}
+
+
+
+/* <-------------------------------------------page4--------------------------------------------------------->   */
+.page5 {
+      min-height: 100vh;
+      width: 100%;
+      background-color: #0F0D0D;
+      position: relative;
+      z-index: 9;
+      padding: 140px 100px;
+      margin-bottom: 2vw;
+}
+
+
+.page5 h2 {
+      text-transform: uppercase;
+      font-size: 4vw;
+      margin-bottom: 50px;
+      font-weight: 300;
+}
+
+.box {
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0px 20px;
+      border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1) {
+      border-bottom: 2px solid #dadada;
+
+}
+
+/* <-------------------------------------------footer--------------------------------------------------------->   */
+
+footer {
+      position: relative;
+      height: 50vw;
+      width: 100%;
+      background-color: #EDBFFF;
+      z-index: 9;
+      mix-blend-mode: difference;
+}
+
+.a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10vh;
+      font-size: 7vw;
+      color: #0F0D0D;
+      font-family: pp mori;
+      font-weight: 300;
+      padding-top: 10vw;
+      padding-left: 5vw;
+}
+
+.b {
+
+
+      height: 40vh;
+      font-size: 1.5vw;
+      font-family: pp mori;
+      font-weight: 300;
+      padding-top: 10vw;
+      padding-left: 5vw;
+}
+
+footer>button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1vw;
+      border-radius: 100%;
+      height: 20vh;
+      width: 10vw;
+      color: #0F0D0D;
+      background-color: #fff;
+      text-transform: uppercase;
+      border: none;
+      font-family: pp mori;
+      font-weight: 300;
+}
